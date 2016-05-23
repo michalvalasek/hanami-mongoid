@@ -1,0 +1,20 @@
+
+<h3>Login</h3>
+
+<%= "Incorrect login." if params[:session] %>
+
+<%=
+  form_for :session, routes.do_login_path do
+    div class: 'form-field' do
+      label 'Email'
+      text_field :email
+    end
+
+    div class: 'form-field' do
+      label 'Password'
+      text_field :password
+    end
+
+    submit 'Login', class: 'btn btn-primary'
+  end
+%>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Trial - Admin</title>
+    <%= favicon %>
+  </head>
+  <body>
+    <h1>Admin</h1>
+    <% if current_user %>
+      <p>
+        Logged in as <%= current_user.email %> | <%= link_to "logout", routes.do_logout_path %>
+      </p>
+    <% end %>
+    <%= yield %>
+  </body>
+</html>
