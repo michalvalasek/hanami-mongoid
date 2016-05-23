@@ -1,6 +1,6 @@
 # hanami-mongoid
 
-Example application built with Hanami ruby web framework and Mongoid as the data persistence layer.
+Example application built with [Hanami](https://github.com/hanami/hanami) ruby web framework and Mongoid as the data persistence layer.
 The project consists of two *apps* - public area and the administration UI.
 Admin UI is accessible only by authenticated users - there's a simple authentication module which checks user credentials (email+password) against the database and creates user session in case of successful login.
 
